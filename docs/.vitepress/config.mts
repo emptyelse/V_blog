@@ -3,14 +3,12 @@ import fs from 'fs';
 import path from 'path';
 
 function generateSidebar(dirPath: string): any[] {
-  console.log('Checking directory path:', dirPath);
   const files = fs.readdirSync(dirPath);  // 读取目录内容
   const sidebar: any[] = [];
 
   files.forEach((file) => {
     const fullPath = path.join(dirPath, file);  // 获取完整文件路径
     const stat = fs.statSync(fullPath);  // 获取文件状态
-    console.log('Markdown File:',fullPath ); 
     if (stat.isDirectory()) {
       // 如果是文件夹，递归调用
       sidebar.push({
@@ -27,8 +25,6 @@ function generateSidebar(dirPath: string): any[] {
       });
     }
   });
-
-  console.log('Sidebar:', sidebar);  // 打印最终的侧边栏配置
   return sidebar;
 }
 
