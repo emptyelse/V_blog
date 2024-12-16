@@ -36,20 +36,24 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '笔记', link: '/markdown/OpenCourse/CS106B/CS106B_InFo.md'}
     ],
-    sidebar: generateSidebar('./docs/markdown'),
 
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     collapsed: false,
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ],
-    //   }
-    // ],
+    sidebar: [
+      {
+        text: 'OpenCourse',
+        collapsed: false,
+        items: [
+          {text:'CS106B',
+            collapsed:true,
+            items:[
+              {text:'CS106简介',link:'/markdown/OpenCourse/CS106B/CS106B_InFo.md'},
+              {text:'Assignment0',link:'/markdown/OpenCourse/CS106B/Assignment0.md'},
+            ]
+          }
+        ],
+      }
+    ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }

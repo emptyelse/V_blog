@@ -6,13 +6,13 @@ hero:
   name: "MY blog"
   text: "李徵的学习博客"
   tagline: 我与我周旋久，宁做我。
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+  # actions:
+  #   - theme: brand
+  #     text: Markdown Examples
+  #     link: /markdown-examples
+  #   - theme: alt
+  #     text: API Examples
+  #     link: /api-examples
 
 features:
   - icon: 🖳
