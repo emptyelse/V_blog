@@ -49,6 +49,7 @@ export default defineConfig({
             items:[
               {text:'CS106简介',link:'/markdown/OpenCourse/CS106B/CS106B_InFo.md'},
               {text:'Assignment0',link:'/markdown/OpenCourse/CS106B/Assignment0.md'},
+              {text:'Assignment1',link:'/markdown/OpenCourse/CS106B/Assignment1.md'},
             ]
           }
         ],
