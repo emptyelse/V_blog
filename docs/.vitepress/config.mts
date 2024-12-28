@@ -41,8 +41,20 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'OpenCourse',
+        text:"Computer",
         collapsed: false,
+        items:[
+          {text:'Modern C++',
+            collapsed:false,
+            items:[
+              {text:'智能指针',link:'/markdown/Computer/C++/Modern_C++/智能指针.md'},
+            ]
+          }
+        ]
+      },
+      {
+        text: 'OpenCourse',
+        collapsed: true,
         items: [
           {text:'CS106B',
             collapsed:true,
